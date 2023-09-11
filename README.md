@@ -26,49 +26,54 @@ Provide step-by-step installation instructions. This may include:
 
 Clone the repository:
 
-bash
-Copy code
+
+```
 git clone https://github.com/your-username/your-repository.git
+```
 Navigate to the project directory:
 
-bash
-Copy code
+
+```
 cd your-repository
+```
 Install PHP dependencies using Composer:
 
-bash
-Copy code
+
+```
 composer install
+```
 Create a .env file by copying .env.example:
 
-bash
-Copy code
+
+
+```
 cp .env.example .env
+```
 Generate an application key:
 
-bash
-Copy code
+```
 php artisan key:generate
+```
 Configure your database settings in the .env file:
 
-makefile
-Copy code
+```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=your_database_name
 DB_USERNAME=your_database_username
 DB_PASSWORD=your_database_password
+```
 Migrate the database:
 
-bash
-Copy code
+```
 php artisan migrate
+```
 Serve the application:
 
-bash
-Copy code
+```
 php artisan serve
+```
 Now, the application should be running locally.
 
 ## Laravel Sponsors
